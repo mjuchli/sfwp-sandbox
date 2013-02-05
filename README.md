@@ -1,4 +1,2 @@
-sfwp-sandbox
-============
-
-Symfony with integrated Wordpress
+Symfony-Wordpress Sandbox
+=========================
