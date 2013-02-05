@@ -28,12 +28,9 @@ class DemoController extends Controller
      */
     public function showAction($slug)
     {
-
         $em = $this->get('doctrine')->getEntityManager();
         $postRepository = $em->getRepository('HypebeastWordpressBundle:Post');
         $post = $postRepository->findOneBySlug($slug);
-
-        $taxonomies = $post->getTaxonomies();
 
         return array('post' => $post);
     }
